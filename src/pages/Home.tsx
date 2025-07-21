@@ -7,9 +7,9 @@ import { motion, type Variants } from "framer-motion"; // No need for AnimatePre
 const Home: React.FC = () => {
   // Array of your background images
   const backgroundImages = [
-    "../public/a1.jpg",
-    "../public/a2.jpg", // Make sure these paths are correct!
-    "../public/a3.jpg", // Make sure these paths are correct!
+    "../images/a1.jpg",
+    "../images/a2.jpg", // Make sure these paths are correct!
+    "../images/a3.jpg", // Make sure these paths are correct!
     // Add more image paths as needed
   ];
 
@@ -148,7 +148,7 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="../Public/adura.jpg"
+                src="../images/adura.jpg"
                 alt="Your Headshot - A professional portrait"
                 className="rounded-full w-56 h-56 object-cover object-center mx-auto border-4 border-primary shadow-2xl animate-pop-in"
               />
