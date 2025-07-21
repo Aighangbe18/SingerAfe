@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors - Use --color-<name> for Tailwind to generate utilities like bg-<name> */
+  --color-primary: #3B82F6;
+  --color-secondary: #10B981;
+  --color-accent: #EF4444;
+  --color-darkBg: #111827;
+  --color-cardBg: #1F2937;
+  --color-lightText: #E5E7EB;
+  --color-lighterText: #D1D5DB;
+
+  /* Font Families - Use --font-<name> for Tailwind to generate utilities like font-<name> */
+  --font-headline: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Keyframes - Allowed directly within @theme */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  @keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  @keyframes pulseRing {
+    from { transform: scale(0.3); opacity: 0.8; }
+    to { transform: scale(1.5); opacity: 0; }
+  }
+
+  /* Animations - Use --animation-<name> for Tailwind to generate utilities like animate-<name> */
+  --animation-fade-in-up: fadeInUp 0.8s ease-out forwards;
+  --animation-fade-in: fadeIn 0.6s ease-out forwards;
+  --animation-slide-in-left: slideInLeft 0.7s ease-out forwards;
+  --animation-pop-in: popIn 0.5s ease-out forwards;
+  --animation-pulse-ring: pulseRing 1.2s cubic-bezier(0.2, 0, 0.8, 1) infinite;
+  --animation-fade-in-up-delayed: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+
+/* Base styles for HTML elements */
+body {
+  font-family: var(--font-body); /* Using the CSS variable defined in @theme */
+  background-color: var(--color-darkBg); /* Using the CSS variable defined in @theme */
+  color: var(--color-lightText); /* Ensure text is visible */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline); /* Using the CSS variable defined in @theme */
+}
+
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-cardBg); /* Direct CSS variable usage */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary); /* Direct CSS variable usage */
+  border-radius: 9999px; /* Equivalent to Tailwind's rounded-full */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2563EB; /* Direct hex for blue-600, as it's a default Tailwind color */
+}
+
+
+/* General button styles - defined as components */
+@layer components {
+  .btn-primary {
+    /* bg-primary will now be recognized from --color-primary in @theme */
+    @apply bg-primary hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center justify-center;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 hover:bg-white hover:text-gray-900 transition-all duration-300 flex items-center justify-center;
+  }
+}
+
+/* Framer Motion related styles (e.g., for global layout) */
+/* .page-transition {
+  position: absolute;
+  width: 100%;
+} */
