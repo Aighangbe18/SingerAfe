@@ -9,7 +9,10 @@ const Home: React.FC = () => {
   const backgroundImages = [
     "../images/a1.jpg",
     "../images/a2.jpg", // Make sure these paths are correct!
-    "../images/a3.jpg", // Make sure these paths are correct!
+    "../images/a3.jpg",
+    "../images/p1.jpg",
+    "../images/cts8.JPG",
+    // Make sure these paths are correct!
     // Add more image paths as needed
   ];
 
@@ -148,7 +151,7 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="../images/adura.jpg"
+                src="../images/a5.png"
                 alt="Your Headshot - A professional portrait"
                 className="rounded-full w-56 h-56 object-cover object-center mx-auto border-4 border-primary shadow-2xl animate-pop-in"
               />
@@ -202,7 +205,7 @@ const Home: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1518609590740-1a610f63116a?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="../images/p13.png"
               alt="Album Art: Echoes of Tomorrow"
               className="w-full lg:w-96 h-auto lg:h-96 object-cover rounded-lg mb-8 lg:mb-0 shadow-lg transform hover:scale-102 transition-transform duration-300"
             />

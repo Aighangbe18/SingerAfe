@@ -126,10 +126,10 @@ const Contact: React.FC = () => {
               <div className="flex items-center">
                 <Mail className="text-primary mr-4 flex-shrink-0" size={28} />
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:aduragbemi.afe@gmail.com"
                   className="hover:text-primary transition-colors break-words"
                 >
-                  your.email@example.com
+                  aduragbemi.afe@gmail.com
                 </a>
               </div>
               <div className="flex items-center">
@@ -138,7 +138,7 @@ const Contact: React.FC = () => {
                   href="tel:+1234567890"
                   className="hover:text-primary transition-colors"
                 >
-                  +1 (234) 567-890
+                  +234 706 867 7504
                 </a>
               </div>
               <div className="flex items-center">
@@ -154,7 +154,7 @@ const Contact: React.FC = () => {
             </h2>
             <div className="flex space-x-6">
               <a
-                href="https://instagram.com/yourprofile"
+                href="https://www.instagram.com/singer_afe_paul?igsh=MWxsM3RhN292Y2szaQ=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-primary transition-colors transform hover:scale-110"
@@ -162,7 +162,7 @@ const Contact: React.FC = () => {
                 <Instagram size={32} />
               </a>
               <a
-                href="http://googleusercontent.com/youtube.com/yourchannel"
+                href="https://youtube.com/@singerafepaul01?si=WfbxfFlWzQQNu-lZ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-primary transition-colors transform hover:scale-110"
@@ -170,7 +170,7 @@ const Contact: React.FC = () => {
                 <Youtube size={32} />
               </a>
               <a
-                href="https://facebook.com/yourpage"
+                href="https://www.facebook.com/share/1F5MTn8rZS/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-primary transition-colors transform hover:scale-110"
@@ -178,7 +178,7 @@ const Contact: React.FC = () => {
                 <Facebook size={32} />
               </a>
               <a
-                href="https://twitter.com/yourhandle"
+                href="https://x.com/singer_afepaul?t=epvyyYKI3_VloE-2lhbG3A&s=08"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-primary transition-colors transform hover:scale-110"

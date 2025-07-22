@@ -20,6 +20,8 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Booking from "./pages/Booking";
 import Contact from "./pages/Contact";
+import Gallery from "./pages/Gallery";
+import Stage from "./pages/Stage";
 
 // Define page transition variants
 const pageVariants: Variants = {
@@ -81,6 +83,34 @@ const AnimatedRoutes: React.FC = () => {
               transition={pageTransition}
             >
               <Booking />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/gallery"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="in"
+              exit="out"
+              transition={pageTransition}
+            >
+              <Gallery />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/stage"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="in"
+              exit="out"
+              transition={pageTransition}
+            >
+              <Stage />
             </motion.div>
           }
         />

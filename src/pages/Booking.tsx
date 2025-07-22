@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import {
   ChevronRight,
   CheckCircle,
-  Info,
   CalendarClock,
   DollarSign,
 } from "lucide-react";
@@ -361,17 +360,6 @@ const Booking: React.FC = () => {
                 Submit Booking Request <ChevronRight className="ml-2" />
               </button>
             </form>
-
-            <div className="mt-8 p-4 bg-gray-700 text-lighterText rounded-lg flex items-start space-x-3 shadow-inner">
-              <Info size={20} className="text-primary flex-shrink-0 mt-1" />
-              <p className="text-sm">
-                For **real-time availability** and **instant booking
-                confirmations**, I highly recommend using the embedded
-                Calendly/Acuity widget here (not implemented in this code
-                example, but a crucial next step!). This form is for direct
-                inquiries.
-              </p>
-            </div>
           </motion.section>
         </>
       )}

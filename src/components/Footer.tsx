@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 text-center">
         <div className="flex justify-center space-x-6 mb-6">
           <a
-            href="https://instagram.com/yourprofile"
+            href="https://www.instagram.com/singer_afe_paul?igsh=MWxsM3RhN292Y2szaQ=="
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors transform hover:scale-110"
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             <Instagram size={28} />
           </a>
           <a
-            href="http://googleusercontent.com/youtube.com/yourchannel"
+            href="https://youtube.com/@singerafepaul01?si=WfbxfFlWzQQNu-lZ"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors transform hover:scale-110"
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             <Youtube size={28} />
           </a>
           <a
-            href="https://facebook.com/yourpage"
+            href="https://www.facebook.com/share/1F5MTn8rZS/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors transform hover:scale-110"
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             <Facebook size={28} />
           </a>
           <a
-            href="https://twitter.com/yourhandle"
+            href="https://x.com/singer_afepaul?t=epvyyYKI3_VloE-2lhbG3A&s=08"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors transform hover:scale-110"
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
             <Twitter size={28} />
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:aduragbemi.afe@gmail.com"
             className="hover:text-primary transition-colors transform hover:scale-110"
           >
             <Mail size={28} />
@@ -72,6 +72,14 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <Link
+                to="/gallery"
+                className="hover:text-primary transition-colors"
+              >
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/contact"
                 className="hover:text-primary transition-colors"
               >
@@ -82,8 +90,8 @@ const Footer: React.FC = () => {
           </ul>
         </nav>
         <p className="text-sm">
-          © {new Date().getFullYear()} Your Name. All rights reserved. Crafted
-          with passion.
+          © {new Date().getFullYear()} Aighangbe Blessing. All rights reserved.
+          Crafted with passion.
         </p>
       </div>
     </footer>

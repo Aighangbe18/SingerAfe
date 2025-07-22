@@ -12,6 +12,7 @@ const Navbar: React.FC = () => {
     { name: "Home", path: "/" },
     { name: "Portfolio", path: "/portfolio" },
     { name: "Booking", path: "/booking" },
+    { name: "Gallery", path: "/gallery" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -51,14 +52,14 @@ const Navbar: React.FC = () => {
             <Link
               key={link.name}
               to={link.path}
-              className={`relative text-lighterText hover:text-primary transition-colors text-lg font-body font-medium
-                ${location.pathname === link.path ? "text-primary" : ""}`}
+              className={`relative text-lighterText hover:text-orange-300 transition-colors text-lg font-body font-medium
+                ${location.pathname === link.path ? "text-orange-200" : ""}`}
             >
               {link.name}
               {location.pathname === link.path && (
                 <motion.span
                   layoutId="underline"
-                  className="absolute left-0 right-0 h-0.5 bg-primary bottom-0 -mb-1"
+                  className="absolute left-0 right-0 h-0.5 bg-orange-500 bottom-0 -mb-1"
                   initial={false}
                   transition={{ type: "spring", stiffness: 500, damping: 30 }}
                 />
