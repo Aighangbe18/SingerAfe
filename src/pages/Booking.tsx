@@ -113,7 +113,7 @@ const Booking: React.FC = () => {
   return (
     <div className="container mx-auto py-20 px-4 min-h-screen pt-32">
       <motion.h1
-        className="text-5xl md:text-6xl font-bold text-center mb-12 text-primary font-headline"
+        className="text-5xl md:text-6xl font-bold text-center mb-12 text-orange-300 font-headline"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

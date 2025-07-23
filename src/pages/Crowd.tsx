@@ -44,47 +44,77 @@ const backgroundPulse: Variants = {
 };
 
 // Main App component
-const Stage = () => {
+const Crowd = () => {
   // Data for photos (music-themed)
   const photos = [
     {
       id: 1,
-      src: "../images/a1.jpg",
+      src: "../images/ff24.jpg",
       alt: "Conceptual album art with vibrant colors",
     },
     {
       id: 2,
-      src: "../images/p4.jpg",
+      src: "../images/ff41.jpg",
       alt: "Dynamic shot of a musician performing live on stage",
     },
     {
       id: 3,
-      src: "../images/p6.jpg",
+      src: "../images/ff42.jpg",
       alt: "Musician in a recording studio with instruments",
     },
     {
       id: 4,
-      src: "../images/p5.jpg",
+      src: "../images/ff43.jpg",
       alt: "Musician interacting with fans at an event",
     },
     {
       id: 5,
-      src: "../images/a4.jpg",
+      src: "../images/ff44.jpg",
       alt: "Professional band portrait",
     },
     {
       id: 6,
-      src: "../images/cts8.JPG",
+      src: "../images/ff24.jpg",
       alt: "Close-up of a vintage guitar",
     },
     {
       id: 7,
-      src: "../images/ff75.jpg",
+      src: "../images/ff45.jpg",
       alt: "Candid shot of musicians backstage",
     },
     {
       id: 8,
-      src: "../images/p2.jpg",
+      src: "../images/ff78.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 9,
+      src: "../images/ff77.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 10,
+      src: "../images/ff88.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 11,
+      src: "../images/ff85.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 12,
+      src: "../images/ff28.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 13,
+      src: "../images/p29.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 14,
+      src: "../images/p28.jpg",
       alt: "View of a large concert crowd",
     },
   ];
@@ -156,7 +186,8 @@ const Stage = () => {
             className="text-5xl font-bold text-white mb-14 text-center flex items-center justify-center gap-4 drop-shadow-lg"
             variants={sectionVariants}
           >
-            <Music size={48} className="text-purple-400" /> Epic Stage Presence
+            <Music size={48} className="text-purple-400" /> Connecting With The
+            Crowd
           </motion.h2>
 
           <button
@@ -197,4 +228,4 @@ const Stage = () => {
   );
 };
 
-export default Stage;
+export default Crowd;

@@ -44,7 +44,7 @@ const backgroundPulse: Variants = {
 };
 
 // Main App component
-const Stage = () => {
+const BackStage = () => {
   // Data for photos (music-themed)
   const photos = [
     {
@@ -197,4 +197,4 @@ const Stage = () => {
   );
 };
 
-export default Stage;
+export default BackStage;

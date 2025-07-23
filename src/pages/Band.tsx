@@ -44,47 +44,117 @@ const backgroundPulse: Variants = {
 };
 
 // Main App component
-const Stage = () => {
+const Band = () => {
   // Data for photos (music-themed)
   const photos = [
     {
       id: 1,
-      src: "../images/a1.jpg",
+      src: "../images/ff58.jpg",
       alt: "Conceptual album art with vibrant colors",
     },
     {
       id: 2,
-      src: "../images/p4.jpg",
+      src: "../images/ff57.jpg",
       alt: "Dynamic shot of a musician performing live on stage",
     },
     {
       id: 3,
-      src: "../images/p6.jpg",
+      src: "../images/ff59.jpg",
       alt: "Musician in a recording studio with instruments",
     },
     {
       id: 4,
-      src: "../images/p5.jpg",
+      src: "../images/ff53.jpg",
       alt: "Musician interacting with fans at an event",
     },
     {
       id: 5,
-      src: "../images/a4.jpg",
+      src: "../images/ff56.jpg",
       alt: "Professional band portrait",
     },
     {
       id: 6,
-      src: "../images/cts8.JPG",
+      src: "../images/ff80.jpg",
       alt: "Close-up of a vintage guitar",
     },
     {
       id: 7,
-      src: "../images/ff75.jpg",
+      src: "../images/ff81.jpg",
       alt: "Candid shot of musicians backstage",
     },
     {
       id: 8,
-      src: "../images/p2.jpg",
+      src: "../images/ff82.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 9,
+      src: "../images/ff83.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 9,
+      src: "../images/ff84.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 10,
+      src: "../images/ff85.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 11,
+      src: "../images/ff86.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 12,
+      src: "../images/ff100.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 13,
+      src: "../images/ff64.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 14,
+      src: "../images/ff98.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 15,
+      src: "../images/ff104.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 16,
+      src: "../images/ff106.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 17,
+      src: "../images/ff107.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 18,
+      src: "../images/p15.png",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 19,
+      src: "../images/ff111.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 20,
+      src: "../images/ff11.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 21,
+      src: "../images/ff3.jpg",
       alt: "View of a large concert crowd",
     },
   ];
@@ -156,7 +226,7 @@ const Stage = () => {
             className="text-5xl font-bold text-white mb-14 text-center flex items-center justify-center gap-4 drop-shadow-lg"
             variants={sectionVariants}
           >
-            <Music size={48} className="text-purple-400" /> Epic Stage Presence
+            <Music size={48} className="text-orange-300" /> Friends & Family
           </motion.h2>
 
           <button
@@ -197,4 +267,4 @@ const Stage = () => {
   );
 };
 
-export default Stage;
+export default Band;

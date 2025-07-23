@@ -22,6 +22,14 @@ import Booking from "./pages/Booking";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Stage from "./pages/Stage";
+import BackStage from "./pages/BackStage";
+import Band from "./pages/Band";
+import BehindStudio from "./pages/BehindStudio";
+import CityChoir from "./pages/CityChoir";
+import Crowd from "./pages/Crowd";
+import Festivals from "./pages/Festivals";
+import Strings from "./pages/Strings";
+import ScrollToTop from "./components/ScrollTop";
 
 // Define page transition variants
 const pageVariants: Variants = {
@@ -43,6 +51,7 @@ const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
   return (
     <AnimatePresence mode="wait">
+      <ScrollToTop />
       <Routes location={location} key={location.pathname}>
         <Route
           path="/"
@@ -111,6 +120,104 @@ const AnimatedRoutes: React.FC = () => {
               transition={pageTransition}
             >
               <Stage />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/back-stage"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="in"
+              exit="out"
+              transition={pageTransition}
+            >
+              <BackStage />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/band"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="in"
+              exit="out"
+              transition={pageTransition}
+            >
+              <Band />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/behind-studio"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="in"
+              exit="out"
+              transition={pageTransition}
+            >
+              <BehindStudio />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/city-choir"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="in"
+              exit="out"
+              transition={pageTransition}
+            >
+              <CityChoir />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/crowd"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="in"
+              exit="out"
+              transition={pageTransition}
+            >
+              <Crowd />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/festivals"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="in"
+              exit="out"
+              transition={pageTransition}
+            >
+              <Festivals />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/strings"
+          element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="in"
+              exit="out"
+              transition={pageTransition}
+            >
+              <Strings />
             </motion.div>
           }
         />

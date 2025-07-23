@@ -44,32 +44,32 @@ const backgroundPulse: Variants = {
 };
 
 // Main App component
-const Stage = () => {
+const CityChoir = () => {
   // Data for photos (music-themed)
   const photos = [
     {
       id: 1,
-      src: "../images/a1.jpg",
+      src: "../images/cts1.JPG",
       alt: "Conceptual album art with vibrant colors",
     },
     {
       id: 2,
-      src: "../images/p4.jpg",
+      src: "../images/cts2.JPG",
       alt: "Dynamic shot of a musician performing live on stage",
     },
     {
       id: 3,
-      src: "../images/p6.jpg",
+      src: "../images/cts3.JPG",
       alt: "Musician in a recording studio with instruments",
     },
     {
       id: 4,
-      src: "../images/p5.jpg",
+      src: "../images/cts4.JPG",
       alt: "Musician interacting with fans at an event",
     },
     {
       id: 5,
-      src: "../images/a4.jpg",
+      src: "../images/cts5.JPG",
       alt: "Professional band portrait",
     },
     {
@@ -79,12 +79,37 @@ const Stage = () => {
     },
     {
       id: 7,
-      src: "../images/ff75.jpg",
+      src: "../images/cts6.JPG",
       alt: "Candid shot of musicians backstage",
     },
     {
       id: 8,
-      src: "../images/p2.jpg",
+      src: "../images/cts7.JPG",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 9,
+      src: "../images/cts9.JPG",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 10,
+      src: "../images/cts10.JPG",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 11,
+      src: "../images/cts11.JPG",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 12,
+      src: "../images/cts12.JPG",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 13,
+      src: "../images/cts13.JPG",
       alt: "View of a large concert crowd",
     },
   ];
@@ -156,7 +181,7 @@ const Stage = () => {
             className="text-5xl font-bold text-white mb-14 text-center flex items-center justify-center gap-4 drop-shadow-lg"
             variants={sectionVariants}
           >
-            <Music size={48} className="text-purple-400" /> Epic Stage Presence
+            <Music size={48} className="text-orange-300" /> City Choir Memories
           </motion.h2>
 
           <button
@@ -197,4 +222,4 @@ const Stage = () => {
   );
 };
 
-export default Stage;
+export default CityChoir;

@@ -16,6 +16,16 @@ const Home: React.FC = () => {
     // Add more image paths as needed
   ];
 
+  const companyLogos = [
+    "slack",
+    "framer",
+    "netflix",
+    "google",
+    "linkedin",
+    "instagram",
+    "facebook",
+  ];
+
   const [currentSlide, setCurrentSlide] = useState(0); // State to track the current slide index
   const slideInterval = 4000; // Time each slide stays visible (e.g., 4 seconds)
   const slideTransitionDuration = 1.0; // Duration of the slide animation in seconds
@@ -56,7 +66,7 @@ const Home: React.FC = () => {
 
   return (
     <motion.div
-      className="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-darkBg via-gray-950 to-gray-800 pt-20 pb-10"
+      className="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-darkBg via-gray-800 to-gray-800 pt-20 pb-10"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -134,7 +144,7 @@ const Home: React.FC = () => {
       <section className="bg-cardBg text-lightText py-16 px-4 w-full shadow-inner-lg">
         <div className="container mx-auto max-w-5xl text-center">
           <motion.h2
-            className="text-4xl md:text-5xl font-bold mb-12 text-primary font-headline"
+            className="text-4xl md:text-5xl font-bold mb-12 text-orange-300 font-headline"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -189,7 +199,7 @@ const Home: React.FC = () => {
       <section className="bg-darkBg text-lightText py-16 px-4 w-full">
         <div className="container mx-auto max-w-6xl text-center">
           <motion.h2
-            className="text-4xl md:text-5xl font-bold mb-12 text-secondary font-headline"
+            className="text-4xl md:text-5xl font-bold mb-12 text-primary font-headline"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -261,7 +271,7 @@ const Home: React.FC = () => {
       <section className="bg-cardBg text-lightText py-16 px-4 w-full">
         <div className="container mx-auto max-w-5xl text-center">
           <motion.h2
-            className="text-4xl md:text-5xl font-bold mb-12 text-primary font-headline"
+            className="text-4xl md:text-5xl font-bold mb-12 text-orange-300 font-headline"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -307,6 +317,33 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      {/* Scrolling Logos */}
+      <div className="py-10 bg-cardBg overflow-hidden select-none">
+        <style>{`
+          .marquee {
+            animation: scroll 25s linear infinite;
+          }
+          @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+        `}</style>
+        <div className="relative max-w-7xl mx-auto">
+          <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-cardBg to-transparent z-10"></div>
+          <div className="flex whitespace-nowrap marquee min-w-[200%]">
+            {[...companyLogos, ...companyLogos].map((logo, i) => (
+              <img
+                key={i}
+                src={`https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/${logo}.svg`}
+                alt={logo}
+                className="h-10 mx-10 object-contain"
+                draggable="false"
+              />
+            ))}
+          </div>
+          <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-cardBg to-transparent z-10"></div>
+        </div>
+      </div>
     </motion.div>
   );
 };

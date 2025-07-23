@@ -1,6 +1,5 @@
 import { motion, type Variants } from "framer-motion";
 import { Music, PlayCircle } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
 // Animation variants for sections
 const sectionVariants: Variants = {
@@ -54,6 +53,7 @@ const Gallery = () => {
       title: "Epic Stage Presence",
       description:
         "The visual heart of our latest sound, blending abstract forms with raw emotion.",
+      link: "./stage",
     },
     {
       id: 2,
@@ -62,6 +62,7 @@ const Gallery = () => {
       title: "Connecting with the Crowd",
       description:
         "Capturing the raw energy and passion of a recent concert performance.",
+      link: "./crowd",
     },
     {
       id: 3,
@@ -70,30 +71,32 @@ const Gallery = () => {
       title: "Behind the Studio Magic",
       description:
         "Intimate moments from our latest recording session, crafting new sounds.",
+      link: "./behind-studio",
     },
     {
       id: 4,
-      src: "../images/ff45.jpg",
+      src: "../images/cts8.JPG",
       alt: "Musician interacting with fans at an event",
-      title: "Signing Autographs",
+      title: "City Chor",
       description:
-        "Joyful memories from a fan meet-and-greet, celebrating our community.",
+        "Joyful memories from with City Choir, celebrating our community.",
+      link: "./city-choir",
     },
     {
       id: 5,
-      src: "../images/p1.jpg",
+      src: "../images/ff58.jpg",
       alt: "Professional band portrait",
-      title: "Band Harmony Portrait",
-      description:
-        "Our official band portrait, reflecting the unity and diversity of our sound.",
+      title: "Friends & Family",
+      description: "Connecting With Our loved Ones.",
+      link: "./band",
     },
     {
       id: 6,
-      src: "../images/p27.jpg",
+      src: "../images/ff12.JPG",
       alt: "Close-up of a vintage guitar",
-      title: "The Soul of the Strings",
-      description:
-        "A detailed look at the instruments that bring our melodies to life.",
+      title: "Personal Picture",
+      description: "Each Picture Dictating My Happy Moments.",
+      link: "./strings",
     },
     {
       id: 7,
@@ -102,6 +105,7 @@ const Gallery = () => {
       title: "Backstage Chronicles",
       description:
         "Unfiltered glimpses into the moments before the stage lights ignite.",
+      link: "./back-stage",
     },
     {
       id: 8,
@@ -109,6 +113,7 @@ const Gallery = () => {
       alt: "View of a large concert crowd",
       title: "Festival of Lights",
       description: "The incredible energy of our audience, a true inspiration.",
+      link: "./festivals",
     },
   ];
 
@@ -157,8 +162,6 @@ const Gallery = () => {
     },
   ];
 
-  const navigate = useNavigate();
-
   return (
     <div className="min-h-screen flex flex-col items-center py-10 px-4 sm:px-6 lg:px-8 font-inter bg-gradient-to-br from-gray-950 via-purple-950 to-black text-gray-100 relative overflow-hidden">
       {/* Animated Background Elements */}
@@ -202,8 +205,8 @@ const Gallery = () => {
           variants={sectionVariants}
         >
           <h1 className="text-7xl md:text-8xl mt-7 font-extrabold text-white leading-tight mb-6 drop-shadow-2xl tracking-tight">
-            The <span className="text-purple-400">Rhythm</span> & The{" "}
-            <span className="text-teal-400">Visuals</span>
+            The <span className="text-orange-300">Rhythm</span> & The{" "}
+            <span className="text-blue-400">Visuals</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto font-light">
             Dive into the captivating world of our music through stunning
@@ -249,11 +252,8 @@ const Gallery = () => {
                   <p className="text-base text-gray-300 leading-relaxed">
                     {photo.description}
                   </p>
-                  <button
-                    className="px-4 py-2 m-2 bg-blue-500 rounded-full justify-center align-middle"
-                    onClick={() => navigate("/Stage")}
-                  >
-                    View More
+                  <button className="px-4 py-2 m-2 bg-blue-500 rounded-full justify-center align-middle">
+                    <a href={photo.link}>View More </a>
                   </button>
                 </div>
               </motion.div>
