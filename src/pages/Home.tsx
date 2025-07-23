@@ -66,7 +66,7 @@ const Home: React.FC = () => {
 
   return (
     <motion.div
-      className="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-darkBg via-gray-800 to-gray-800 pt-20 pb-10"
+      className="min-h-screen overflow-x-hidden flex flex-col justify-center items-center text-center bg-gradient-to-br from-darkBg via-gray-800 to-gray-800 pt-20 pb-10"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -105,7 +105,7 @@ const Home: React.FC = () => {
             className="text-5xl md:text-7xl lg:text-8xl font-bold font-headline mb-4 text-shadow-lg"
             variants={itemVariants}
           >
-            Single Afe Paul
+            Singer Afe Paul
           </motion.h1>
           <motion.p
             className="text-xl md:text-3xl font-body font-light mb-8 max-w-3xl"

@@ -302,7 +302,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-darkBg p-4 shadow-lg fixed w-full z-50 top-0 border-b border-gray-700">
+    <nav className="bg-darkBg overflow-x-hidden p-4 shadow-lg fixed w-full z-50 top-0 border-b border-gray-700">
       <div className="container mx-auto flex justify-between items-center">
         {/* Replaced text logo with AfePaulLogo component */}
         <Link to="/" className="flex items-center">
