@@ -77,7 +77,7 @@ const Gallery = () => {
       id: 4,
       src: "../images/cts8.JPG",
       alt: "Musician interacting with fans at an event",
-      title: "City Chor",
+      title: "City Choir",
       description:
         "Joyful memories from with City Choir, celebrating our community.",
       link: "./city-choir",

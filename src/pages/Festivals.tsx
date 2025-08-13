@@ -59,7 +59,7 @@ const Festivals = () => {
     },
     {
       id: 3,
-      src: "../images/ff6.jpg",
+      src: "../images/m1.jpg",
       alt: "Musician in a recording studio with instruments",
     },
     {
@@ -110,6 +110,16 @@ const Festivals = () => {
     {
       id: 13,
       src: "../images/p11.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 14,
+      src: "../images/ff6.jpg",
+      alt: "View of a large concert crowd",
+    },
+    {
+      id: 15,
+      src: "../images/m2.jpg",
       alt: "View of a large concert crowd",
     },
   ];

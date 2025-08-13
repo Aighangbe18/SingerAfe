@@ -215,28 +215,27 @@ const Home: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <img
-              src="../images/p13.png"
+              src="../images/m2.jpg"
               alt="Album Art: Echoes of Tomorrow"
               className="w-full lg:w-96 h-auto lg:h-96 object-cover rounded-lg mb-8 lg:mb-0 shadow-lg transform hover:scale-102 transition-transform duration-300"
             />
             <div className="text-left flex-1">
               <h3 className="text-3xl md:text-4xl font-bold mb-3 text-white font-headline">
-                Echoes of Tomorrow
+                IFE MI (ARUEMWONMWAN MWEN)
               </h3>
               <p className="text-primary text-xl mb-4 font-body">
-                New Single | Released: July 15, 2025
+                New Single | Released: August 11, 2025
               </p>
               <p className="mb-6 text-lighterText text-lg leading-relaxed">
-                "Echoes of Tomorrow" is my most personal work to date, a deep
-                dive into themes of hope, introspection, and the evolving human
-                spirit. This track weaves together cinematic strings, intricate
-                electronic textures, and evocative vocal harmonies, crafting an
-                immersive soundscape that invites listeners to reflect on their
-                own journeys. It’s an auditory promise of a brighter future.
+                "IFE MI" (Aruemwonmwan mwen) is a song I composed at the request
+                of a couple friend in the UK. I am so glad to share in their
+                joy. Aruemwonmwan mwen is the Edo expression for my love while
+                the Ife mi is the same for Yoruba. They are a christian coyuple
+                and I am glad to be part of this history.
               </p>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <a
-                  href="https://spotify.com/your-song"
+                  href="https://open.spotify.com/track/6XbVgsSvqDkqZOJZKx8JVy?si=EP-PjPniRoOrjNXD4Lu2Wg"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-full text-md font-semibold flex items-center transition-all duration-300 transform hover:scale-105"
@@ -249,7 +248,7 @@ const Home: React.FC = () => {
                   Stream on Spotify
                 </a>
                 <a
-                  href="http://googleusercontent.com/youtube.com/1"
+                  href="https://youtu.be/zFMplSzEaUw?si=GutZj9WIgvieFIST"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-full text-md font-semibold flex items-center transition-all duration-300 transform hover:scale-105"
